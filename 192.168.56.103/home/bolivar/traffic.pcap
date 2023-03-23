@@ -1,0 +1,15 @@
+12:21:38.315438 IP 192.168.56.102 > bolivar-server1: ICMP echo request, id 1, seq 1, length 64
+12:21:38.315528 IP bolivar-server1 > 192.168.56.102: ICMP echo reply, id 1, seq 1, length 64
+12:21:39.347974 IP 192.168.56.102 > bolivar-server1: ICMP echo request, id 1, seq 2, length 64
+12:21:39.347996 IP bolivar-server1 > 192.168.56.102: ICMP echo reply, id 1, seq 2, length 64
+12:21:40.371162 IP 192.168.56.102 > bolivar-server1: ICMP echo request, id 1, seq 3, length 64
+12:21:40.371186 IP bolivar-server1 > 192.168.56.102: ICMP echo reply, id 1, seq 3, length 64
+12:21:41.392691 IP 192.168.56.102 > bolivar-server1: ICMP echo request, id 1, seq 4, length 64
+12:21:41.392721 IP bolivar-server1 > 192.168.56.102: ICMP echo reply, id 1, seq 4, length 64
+12:21:42.416602 IP 192.168.56.102 > bolivar-server1: ICMP echo request, id 1, seq 5, length 64
+12:21:42.416631 IP bolivar-server1 > 192.168.56.102: ICMP echo reply, id 1, seq 5, length 64
+12:21:43.408307 ARP, Request who-has bolivar-server1 tell 192.168.56.102, length 46
+12:21:43.408316 ARP, Reply bolivar-server1 is-at 08:00:27:22:fd:0c (oui Unknown), length 28
+12:21:43.548415 ARP, Request who-has 192.168.56.102 tell bolivar-server1, length 28
+12:21:43.549272 ARP, Reply 192.168.56.102 is-at 08:00:27:97:ce:a3 (oui Unknown), length 46
+

@@ -1,0 +1,25 @@
+---
+
+- hosts: all
+  become: true
+  pre_tasks:
+
+  - name: Install Updates in Ubuntu
+    tags: always
+    apt:
+      upgrade: dist
+      update_cache: yes
+    when: ansible_distribution == "Ubuntu"
+
+  - name: Transferring the executable pcap file to manage node
+    fetch:
+      src: traffic.pcap
+      dest: /home/bolivar/BOLIVAR-HOa8.1/
+
+  - block:
+    - name: Verifying the extracted PCAP file is exist
+      shell: cd /BOLIVAR-HOA8.1/192.168.56.103/traffic.pcap | cat traffic.pcap
+      register: extract_PCAP
+
+  - debug:
+      msg="{{ extract_PCAP }}"
